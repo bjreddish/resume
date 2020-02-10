@@ -1,0 +1,110 @@
+\documentclass[10pt,ragged2e]{altacv}
+
+% page layout
+\geometry{left=1.3cm,right=8.9cm,marginparwidth=6.8cm,marginparsep=0.8cm,top=1.2cm,bottom=1.2cm}
+
+% packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[hidelinks]{hyperref}
+
+% colors
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% text bullets
+\renewcommand{\itemmarker}{{\small\textbullet}}
+
+\begin{document}
+  \name{Brandon Reddish}
+  \tagline{Graduate Student Researcher}
+  \personalinfo{%
+    \location{Sacramento, CA}
+    \phone{(530) 518 -- 3215}
+    \href{mailto:bjreddish@ucdavis.edu}{\email{bjreddish@ucdavis.edu}}
+    \href{https://www.linkedin.com/in/brandon-reddish-a5921a133/}{\linkedin{linkedin.com/in/brandon-reddish/}}
+    \href{http://github.com/bjreddish}{\github{github.com/bjreddish}} 
+}
+
+%% header extends all the way across
+\begin{fullwidth}
+  \makecvheader
+\end{fullwidth}
+
+% itemize environment size
+\AtBeginEnvironment{itemize}{\small}
+
+% experience
+\cvsection[page1sidebar]{Experience}
+
+\cvevent{University of California, Davis}{Graduate Researcher}{September 2018 -- Present}{Davis, CA}
+\begin{itemize}
+  \item Conducted hypersonic CFD simulations to characterize the effectiveness of control surfaces on blunt bodies during reentry
+  \item Developed geometry and meshes from published literature and used published results of wind tunnel tests to verify CFD simulations
+  \item Processed large data sets of CFD results using csh and python scripting
+
+\end{itemize}
+
+\cvevent{}{Undergraduate Researcher}{October 2016 -- June 2017}{Davis, CA}
+\begin{itemize}
+  \item Characterized flow under a small propeller for use on an agricultural drone
+  \item Designed and built apparatus to measure the flow field beneath a rotor with an Arduino and pitot tube
+\end{itemize}
+
+\addvspace{.14cm}
+
+\divider
+
+\addvspace{.14cm}
+
+
+\cvevent{NASA Ames Research Center}{Graduate Student Researcher}{October 2018 -- Present}{Moffett Field, CA}
+\begin{itemize}
+  \item Generated full aerodynamic databases for a deployable reentry vehicle using CART3D and CBAERO
+  \item Navigated and leveraged high performance parallel computing resources from the NASA Advanced Supercomputing Division to run large CFD cases
+  \item Created CAD models and meshes for multiple vehicle configurations
+  \item Studied the aerodynamic and thermal environment of super and hypersonic flow with shock interactions
+\end{itemize}
+
+\addvspace{.14cm}
+
+\divider
+
+\addvspace{.14cm}
+
+\cvevent{Northrop Grumman}{Aeronautical Engineer}{July 2017 -- September 2018}{Sunnyvalue, CA}
+\begin{itemize}
+  \item Ran CFD simulations and generated meshes for cases with multiphase flow, reactions and overset grids
+  \item Worked with a team to develop in-house codes for processing test data from over a hundred channels
+  \item Developed an aerothermal code in Python from an existing FORTRAN code
+  \item Authored a variety of technical reports and prepared basis of estimate documents for project proposals
+  \item Performed analysis for system qualification and advanced development
+\end{itemize}
+
+\addvspace{.14cm}
+
+\divider
+
+\addvspace{.14cm}
+
+\cvevent{Air Spray USA}{Student Engineering Intern}{June 2016 -- August 2016}{Chico, CA}
+\begin{itemize}
+  \item Designed and prototyped a weight sensing system for landing gear
+  \item Rewired portions of BAE 146 electrical system using schematics and manuals
+  \item Designed and installed insert for structural member of BAE 146 airframe
+
+\end{itemize}
+
+
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
